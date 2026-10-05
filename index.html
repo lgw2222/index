@@ -1,60 +1,837 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102c47">
-  <meta name="description" content="How to find and befriend Cramorant in Pokémon Sleep.">
-  <title>Cramorant Acquisition Guide | Pokémon Sleep</title>
-  <style>
-    :root { --navy:#102c47; --blue:#205575; --seafoam:#9ce4d5; --mint:#e8f8f4; --bg:#f3f8fa; --text:#20394c; --muted:#587081; --border:#d8e8ed; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
-    .hero { position:relative; overflow:hidden; background:linear-gradient(135deg,#102c47 0%,#174b66 60%,#267c82 100%); color:white; }
-    .hero::after { content:""; position:absolute; width:380px; height:380px; right:-100px; top:-160px; border:70px solid rgba(156,228,213,.12); border-radius:50%; pointer-events:none; }
-    .hero-inner,main,footer { width:min(100% - 40px,960px); margin-inline:auto; }
-    .hero-inner { padding:76px 0 88px; position:relative; z-index:1; }
-    .eyebrow { display:inline-block; margin:0 0 16px; padding:6px 13px; border:1px solid rgba(156,228,213,.55); border-radius:999px; color:var(--seafoam); font-size:.78rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
-    h1,h2,p { margin-top:0; }
-    h1 { max-width:740px; margin-bottom:16px; font-size:clamp(2.5rem,7vw,4.7rem); line-height:1.08; letter-spacing:-.045em; }
-    .hero-copy { max-width:620px; margin-bottom:26px; color:#d4eaf0; font-size:clamp(1rem,2.4vw,1.2rem); }
-    .hero-link { display:inline-block; padding:12px 20px; border-radius:12px; background:var(--seafoam); color:var(--navy); font-weight:800; text-decoration:none; transition:transform .18s ease,background .18s ease; }
-    .hero-link:hover { transform:translateY(-2px); background:#c3f3e9; }
-    a:focus-visible { outline:3px solid #ffcf68; outline-offset:4px; }
-    main { padding:42px 0 64px; }
-    section { margin-bottom:22px; padding:clamp(22px,4vw,36px); border:1px solid var(--border); border-radius:22px; background:#fff; box-shadow:0 16px 42px rgba(16,44,71,.09); }
-    h2 { margin-bottom:8px; color:var(--navy); font-size:clamp(1.45rem,3vw,1.9rem); letter-spacing:-.025em; }
-    .section-intro { margin-bottom:22px; color:var(--muted); }
-    .details { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
-    .detail { padding:18px; border:1px solid #d6eee9; border-radius:15px; background:var(--mint); }
-    .detail-label { display:block; margin-bottom:5px; color:var(--blue); font-size:.76rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
-    .detail strong { color:var(--navy); font-size:1.05rem; }
-    .table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:14px; }
-    table { width:100%; border-collapse:collapse; text-align:left; }
-    th,td { padding:16px 20px; }
-    thead { background:var(--navy); color:white; }
-    th { font-size:.85rem; letter-spacing:.03em; }
-    tbody tr + tr { border-top:1px solid var(--border); }
-    tbody tr:nth-child(even) { background:#f6fafb; }
-    .rank { display:inline-block; padding:4px 10px; border-radius:999px; background:var(--mint); color:#175e62; font-weight:800; white-space:nowrap; }
-    .tips { margin:16px 0 0; padding-left:0; list-style:none; }
-    .tips li { position:relative; margin-top:14px; padding:15px 16px 15px 48px; border-radius:14px; background:#f5faf9; }
-    .tips li::before { content:"✓"; position:absolute; left:16px; top:15px; display:grid; width:22px; height:22px; place-items:center; border-radius:50%; background:#c9eee5; color:#155d62; font-size:.85rem; font-weight:900; }
-    .tips strong { color:var(--navy); }
-    .note { margin:20px 0 0; padding:15px 18px; border-left:4px solid #4caf9f; border-radius:0 10px 10px 0; background:var(--mint); color:var(--blue); }
-    footer { padding-bottom:30px; color:var(--muted); font-size:.83rem; text-align:center; }
-    @media(max-width:650px) { .hero-inner { padding:56px 0 64px; } main { padding-top:24px; } .details { grid-template-columns:1fr; } th,td { padding:14px; } }
-    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .hero-link { transition:none; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1F5136">
+<title>Knee-ver Over the Hill · Live</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --turf:#1F5136; --turf2:#163D28; --chalk:#F2F4EE; --paper:#FFFFFF; --ink:#14261C;
+  --mute:#5E6F63; --line:#D8DFD5; --pylon:#FF5A1F; --link:#2457C5; --good:#1E7A45; --bad:#B42318;
+  --disp:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --chalk:#0D1D14; --paper:#142A1D; --ink:#E6EDE5; --mute:#97A99C; --line:#244031; --link:#8FB1FF; --good:#5BCB8A; --bad:#FF8A7A; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--chalk);color:var(--ink);font:15px/1.45 var(--body);-webkit-font-smoothing:antialiased;
+  padding-bottom:env(safe-area-inset-bottom,0px)}
+button{font:inherit;color:inherit}
+a{color:var(--link)}
+:focus-visible{outline:2px solid var(--pylon);outline-offset:2px}
+
+/* Header: the field */
+.field{position:relative;color:#fff;background:
+  repeating-linear-gradient(90deg, transparent 0 calc(10% - 1px), rgba(255,255,255,.16) calc(10% - 1px) 10%),
+  linear-gradient(180deg,var(--turf),var(--turf2));
+  padding:calc(env(safe-area-inset-top,0px) + 18px) 18px 16px;overflow:hidden}
+.field::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 2px,transparent 2px 2%)}
+.hwrap{max-width:760px;margin:0 auto;position:relative;z-index:1}
+.tname{font:800 clamp(30px,8vw,44px)/.95 var(--disp);letter-spacing:-.5px;margin:0}
+.sub{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px;opacity:.88}
+.board{display:flex;align-items:flex-end;gap:16px;margin-top:14px}
+.board .big{font:800 46px/1 var(--disp);font-variant-numeric:tabular-nums}
+.board .lbl{font-size:12.5px;opacity:.85;line-height:1.3}
+.board .vs{font:700 22px/1 var(--disp);opacity:.75;font-variant-numeric:tabular-nums}
+
+/* Ticker */
+.ticker{background:var(--pylon);color:#fff;overflow:hidden;white-space:nowrap;height:34px;display:flex;align-items:center;
+  font:600 16px/1 var(--disp);letter-spacing:.2px}
+.track{display:inline-block;padding-left:100%;animation:crawl var(--dur,40s) linear infinite}
+.track span{margin-right:44px}
+.track b{font-weight:800;margin-right:6px}
+@keyframes crawl{to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion: reduce){ .track{animation:none;padding-left:14px} }
+
+/* Tabs */
+.tabs{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);
+  padding-top:env(safe-area-inset-top,0px)}
+.tabs .in{max-width:760px;margin:0 auto;display:flex}
+.tab{flex:1;background:none;border:0;padding:12px 4px 10px;font:700 18px/1 var(--disp);color:var(--mute);
+  border-bottom:3px solid transparent;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--pylon)}
+.tab .dot{display:inline-block;min-width:18px;padding:2px 5px;margin-left:6px;border-radius:9px;background:var(--pylon);
+  color:#fff;font:700 12px/14px var(--body);vertical-align:2px}
+
+main{max-width:760px;margin:0 auto;padding:6px 0 40px}
+.view[hidden]{display:none}
+
+/* Roster */
+.group{display:flex;justify-content:space-between;align-items:baseline;padding:18px 16px 6px}
+.group h2{font:700 22px/1 var(--disp);margin:0}
+.group .tot{font:700 18px/1 var(--disp);color:var(--mute);font-variant-numeric:tabular-nums}
+.list{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:40px 46px 1fr auto;gap:10px;align-items:center;width:100%;text-align:left;
+  background:none;border:0;border-bottom:1px solid var(--line);padding:10px 14px 10px 10px;cursor:pointer;position:relative}
+.row:last-child{border-bottom:0}
+.row.live::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--pylon)}
+.slot{font:700 15px/1 var(--disp);color:var(--mute);text-align:center}
+.hs{width:46px;height:46px;border-radius:50%;object-fit:cover;background:var(--chalk);border:1px solid var(--line)}
+.hs.init{display:flex;align-items:center;justify-content:center;font:700 17px/1 var(--disp);color:var(--mute)}
+.nm{font-weight:600;font-size:15px;line-height:1.2}
+.pos{font-weight:500;font-size:12px;color:var(--mute);margin-left:4px}
+.ir{color:var(--bad);font-weight:700;font-size:11px;margin-left:4px}
+.ln{font-size:12.5px;color:var(--mute);margin-top:3px;line-height:1.35}
+.rt{text-align:right;min-width:64px}
+.pt{font:800 26px/1 var(--disp);font-variant-numeric:tabular-nums}
+.pt.zero{color:var(--mute)}
+.gs{font-size:11.5px;color:var(--mute);margin-top:3px;white-space:nowrap}
+.gs.live{color:var(--pylon);font-weight:600}
+.note{padding:14px 16px;color:var(--mute);font-size:13px}
+
+/* Alerts feed */
+.feed{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.al{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:12px 16px;cursor:pointer}
+.al:last-child{border-bottom:0}
+.al .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.al .tt{font-weight:600}
+.al .tm{font-size:12px;color:var(--mute);white-space:nowrap}
+.al .bd{font-size:13px;color:var(--mute);margin-top:2px}
+.al.k-score .tt,.al.k-bigplay .tt{color:var(--good)}
+.al.k-turnover .tt{color:var(--bad)}
+.empty{padding:28px 18px;color:var(--mute);text-align:center}
+
+/* Settings */
+.set{padding:4px 16px 20px}
+.set h3{font:700 20px/1 var(--disp);margin:22px 0 8px}
+.set label.ck{display:flex;gap:10px;align-items:center;padding:7px 0}
+.set p{color:var(--mute);font-size:13px;margin:6px 0}
+.btn{background:var(--turf);color:#fff;border:0;border-radius:8px;padding:10px 14px;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+select,textarea{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:8px}
+textarea{width:100%;min-height:260px;font-size:13px;line-height:1.5}
+
+/* Player sheet */
+dialog{border:0;padding:0;max-width:640px;width:100%;max-height:92vh;border-radius:16px 16px 0 0;margin:auto auto 0;
+  background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(5,15,9,.55)}
+@media(min-width:700px){dialog{border-radius:16px;margin:auto}}
+.sh{position:sticky;top:0;background:var(--paper);display:flex;gap:12px;align-items:center;padding:16px;border-bottom:1px solid var(--line);z-index:2}
+.sh .hs{width:62px;height:62px}
+.sh h2{font:800 28px/1 var(--disp);margin:0}
+.sh .x{margin-left:auto;background:none;border:1px solid var(--line);border-radius:50%;width:36px;height:36px;font-size:18px;cursor:pointer;flex:none}
+.sb{padding:4px 16px 24px;overflow:auto}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.links a{font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.wk{border-top:1px solid var(--line);padding:14px 0}
+.wk .wh{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.wk .wt{font:700 19px/1 var(--disp)}
+.wk .wp{font:800 22px/1 var(--disp);font-variant-numeric:tabular-nums}
+.wk .wl{font-size:13px;color:var(--mute);margin-top:4px}
+.vids{display:flex;gap:10px;overflow-x:auto;margin-top:10px;padding-bottom:4px;scroll-snap-type:x mandatory}
+.vid{flex:0 0 200px;scroll-snap-align:start;text-decoration:none;color:var(--ink)}
+.vid img{width:200px;height:112px;object-fit:cover;border-radius:8px;background:var(--chalk);display:block}
+.vid span{display:block;font-size:12.5px;line-height:1.3;margin-top:5px}
+.vid em{font-style:normal;color:var(--mute);font-size:11.5px}
+.wk .more{font-size:12.5px;margin-top:8px;display:inline-block}
+
+/* Toast */
+.toast{position:fixed;left:50%;transform:translate(-50%,-140%);top:calc(env(safe-area-inset-top,0px) + 10px);z-index:50;
+  background:var(--ink);color:var(--paper);border-left:5px solid var(--pylon);border-radius:10px;padding:10px 14px;
+  max-width:min(92vw,520px);box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .25s ease}
+.toast.show{transform:translate(-50%,0)}
+.toast b{display:block}
+.toast small{opacity:.8}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
 </head>
 <body>
-  <header class="hero"><div class="hero-inner"><p class="eyebrow">Pokémon Sleep • Field Guide</p><h1>Cramorant Acquisition Guide</h1><p class="hero-copy">Find the right island, reach the required Snorlax rank, and prepare enough biscuits to befriend Cramorant.</p><a class="hero-link" href="#spawn-conditions">View spawn conditions ↓</a></div></header>
-  <main>
-    <section aria-labelledby="overview-heading"><h2 id="overview-heading">Overview</h2><p class="section-intro">Cramorant is a Slumbering Pokémon that specializes in gathering ingredients.</p><div class="details"><div class="detail"><span class="detail-label">Specialty</span><strong>Ingredients</strong></div><div class="detail"><span class="detail-label">Sleep type</span><strong>Slumbering</strong></div><div class="detail"><span class="detail-label">Main skill</span><strong>Tasty Chance S</strong></div></div></section>
-    <section id="spawn-conditions" aria-labelledby="spawns-heading"><h2 id="spawns-heading">Spawn Conditions</h2><p class="section-intro">Reach at least the listed Snorlax rank for Cramorant’s one-star sleep style to become available in that area.</p><div class="table-wrap"><table><thead><tr><th scope="col">Research area</th><th scope="col">Minimum Snorlax rank</th></tr></thead><tbody><tr><td>Greengrass Isle</td><td><span class="rank">Master 1</span></td></tr><tr><td>Cyan Beach</td><td><span class="rank">Ultra 3</span></td></tr><tr><td>Snowdrop Tundra</td><td><span class="rank">Ultra 1</span></td></tr></tbody></table></div><p class="note">Meeting a rank requirement makes an encounter possible; it does not guarantee Cramorant will appear.</p></section>
-    <section aria-labelledby="tips-heading"><h2 id="tips-heading">Strategic Tips</h2><ul class="tips"><li><strong>Target Slumbering sleep.</strong> Aim for a Slumbering result during sleep research to look for Cramorant under normal encounter rules.</li><li><strong>Use Cramorant Incense.</strong> If you have one, use it before a sleep session when you are ready to feed Cramorant biscuits.</li><li><strong>Plan for 16 Friendship Points.</strong> Cramorant’s friendship gauge requires 16 points, so bring enough biscuits and watch for a hungry bonus.</li></ul></section>
-  </main>
-  <footer>Unofficial Pokémon Sleep guide • Pokémon is a trademark of Nintendo, Creatures Inc., and GAME FREAK inc.</footer>
+
+<header class="field">
+  <div class="hwrap">
+    <h1 class="tname" id="teamName">Knee-ver Over the Hill</h1>
+    <div class="sub"><span id="wkLbl">Loading week…</span><span id="updLbl"></span></div>
+    <div class="board" id="board"></div>
+  </div>
+</header>
+<div class="ticker" aria-live="off"><div class="track" id="track"><span>Waiting for the first update from ESPN…</span></div></div>
+
+<nav class="tabs" role="tablist">
+  <div class="in">
+    <button class="tab" role="tab" aria-selected="true" data-v="team">My team</button>
+    <button class="tab" role="tab" aria-selected="false" data-v="alerts">Alerts<span class="dot" id="unread" hidden>0</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-v="settings">Settings</button>
+  </div>
+</nav>
+
+<main>
+  <section class="view" id="v-team"></section>
+  <section class="view" id="v-alerts" hidden></section>
+  <section class="view set" id="v-settings" hidden>
+    <h3>Notifications</h3>
+    <p id="notifStatus"></p>
+    <div class="btns">
+      <button class="btn" id="notifBtn">Turn on notifications</button>
+      <button class="btn ghost" id="testBtn">Send test alert</button>
+    </div>
+    <p>Phone alerts that work with this page closed: install the ntfy app and subscribe to <b>kneever-garrott-332193-alerts</b>.</p>
+    <p>In-page alerts fire while this page is open. On game day, keep the tab open (or turn on "Keep screen on") so your phone doesn't pause it.</p>
+
+    <h3>Alert me about</h3>
+    <label class="ck"><input type="checkbox" data-kind="score"> Touchdowns, field goals and D/ST scores</label>
+    <label class="ck"><input type="checkbox" data-kind="bigplay"> Big plays (40+ yard runs and catches)</label>
+    <label class="ck"><input type="checkbox" data-kind="milestone"> Milestones (100 yards, 300 passing, 20+ points)</label>
+    <label class="ck"><input type="checkbox" data-kind="turnover"> Interceptions and lost fumbles</label>
+    <label class="ck"><input type="checkbox" data-kind="kickoff"> Kickoffs for my players' games</label>
+    <label class="ck"><input type="checkbox" data-kind="final"> Final scores with my players' points</label>
+    <label class="ck"><input type="checkbox" id="startersOnly"> Only notify for starters</label>
+    <label class="ck"><input type="checkbox" id="wakeLock"> Keep screen on while this page is open</label>
+
+    <h3>Scoring</h3>
+    <select id="scoring">
+      <option value="ppr">PPR</option>
+      <option value="half">Half PPR</option>
+      <option value="std">Standard</option>
+    </select>
+    <p>Once the ESPN sync is running, this week's points come straight from your league. Live in-game points between syncs, and past weeks, are estimates using this setting.</p>
+
+    <h3>Roster</h3>
+    <p id="rosterSrc"></p>
+    <p>One player per line: slot, name, NFL team, position. Slots: QB, RB, WR, TE, FLEX, D/ST, K, Bench, IR.</p>
+    <textarea id="rosterTxt" spellcheck="false"></textarea>
+    <div class="btns">
+      <button class="btn" id="saveRoster">Save roster</button>
+      <button class="btn ghost" id="resetRoster">Reset to Week 4 roster</button>
+      <button class="btn ghost" id="clearFeed">Clear alert history</button>
+    </div>
+  </section>
+</main>
+
+<dialog id="sheet"></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ============ Config ============ */
+const LEAGUE = { id: 332193, team: 1, season: 2026 };
+const SB  = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard';
+const SUM = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=';
+
+const DEFAULT_ROSTER = `QB, Joe Burrow, CIN, QB
+RB, Omarion Hampton, LAC, RB
+RB, Bhayshul Tuten, JAX, RB
+WR, Malik Nabers, NYG, WR
+WR, Josh Downs, IND, WR
+FLEX, Jaxon Smith-Njigba, SEA, WR
+FLEX, Tetairoa McMillan, CAR, WR
+D/ST, Bears, CHI, D/ST
+K, Harrison Mevis, LAR, K
+Bench, Mike Evans, SF, WR
+Bench, Blake Corum, LAR, RB
+Bench, Zach Charbonnet, SEA, RB
+Bench, Dylan Sampson, CLE, RB
+Bench, Devaughn Vele, NO, WR
+Bench, George Holani, SEA, RB
+Bench, Emanuel Wilson, SEA, RB
+IR, Jonathan Brooks, CAR, RB
+IR, Alec Pierce, IND, WR`;
+
+const TEAM_NICK = {ARI:'Cardinals',ATL:'Falcons',BAL:'Ravens',BUF:'Bills',CAR:'Panthers',CHI:'Bears',CIN:'Bengals',CLE:'Browns',
+  DAL:'Cowboys',DEN:'Broncos',DET:'Lions',GB:'Packers',HOU:'Texans',IND:'Colts',JAX:'Jaguars',KC:'Chiefs',LV:'Raiders',LAC:'Chargers',
+  LAR:'Rams',MIA:'Dolphins',MIN:'Vikings',NE:'Patriots',NO:'Saints',NYG:'Giants',NYJ:'Jets',PHI:'Eagles',PIT:'Steelers',SF:'49ers',
+  SEA:'Seahawks',TB:'Buccaneers',TEN:'Titans',WSH:'Commanders'};
+const PRO_TEAM = {1:'ATL',2:'BUF',3:'CHI',4:'CIN',5:'CLE',6:'DAL',7:'DEN',8:'DET',9:'GB',10:'TEN',11:'IND',12:'KC',13:'LV',14:'LAR',15:'MIA',
+  16:'MIN',17:'NE',18:'NO',19:'NYG',20:'NYJ',21:'PHI',22:'ARI',23:'PIT',24:'LAC',25:'SF',26:'SEA',27:'TB',28:'WSH',29:'CAR',30:'JAX',33:'BAL',34:'HOU'};
+const POS_ID = {1:'QB',2:'RB',3:'WR',4:'TE',5:'K',16:'D/ST'};
+const SLOT_ID = {0:'QB',2:'RB',4:'WR',6:'TE',16:'D/ST',17:'K',20:'Bench',21:'IR',23:'FLEX'};
+const DST_RE = /interception|fumble|kickoff return|punt return|blocked|defensive/i;
+
+const LABELMAP = {
+  passing:{'C/ATT':'completions/passingAttempts','YDS':'passingYards','TD':'passingTouchdowns','INT':'interceptions','SACKS':'sacks-sackYardsLost'},
+  rushing:{'CAR':'rushingAttempts','YDS':'rushingYards','TD':'rushingTouchdowns','LONG':'longRushing'},
+  receiving:{'REC':'receptions','YDS':'receivingYards','TD':'receivingTouchdowns','LONG':'longReception','TGTS':'receivingTargets'},
+  fumbles:{'FUM':'fumbles','LOST':'fumblesLost','REC':'fumblesRecovered'},
+  kicking:{'FG':'fieldGoalsMade/fieldGoalAttempts','XP':'extraPointsMade/extraPointAttempts','PTS':'totalKickingPoints'}
+};
+
+/* ============ Storage ============ */
+const lsGet = (k, d=null) => { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch { pruneCache(); } };
+function pruneCache(){ try { Object.keys(localStorage).filter(k=>k.startsWith('kvh.ev.')).slice(0,40).forEach(k=>localStorage.removeItem(k)); } catch {} }
+
+/* ============ Helpers ============ */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const norm = n => String(n).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+  .replace(/\b(jr|sr|ii|iii|iv|v)\b\.?/g,'').replace(/[^a-z]/g,'');
+const lastName = n => { const p = String(n).replace(/\s+(Jr|Sr|II|III|IV|V)\.?$/i,'').trim().split(/\s+/); return p[p.length-1]; };
+const num = x => { const v = parseFloat(x); return isNaN(v) ? 0 : v; };
+const fmt = n => (Math.round(n*10)/10).toFixed(1);
+const keyOf = p => norm(p.name) + '|' + p.team;
+
+async function getJSON(url){
+  const c = new AbortController(); const t = setTimeout(() => c.abort(), 12000);
+  try { const r = await fetch(url, { signal: c.signal }); if (!r.ok) throw new Error('HTTP ' + r.status); return await r.json(); }
+  finally { clearTimeout(t); }
+}
+
+/* ============ State ============ */
+const S = {
+  roster: parseRoster(lsGet('kvh.rosterTxt') || DEFAULT_ROSTER),
+  rosterSrc: lsGet('kvh.rosterSrc') || 'screenshot',
+  ids: lsGet('kvh.ids', {}),
+  feed: lsGet('kvh.feed', []),
+  seen: new Set(lsGet('kvh.seen', [])),
+  settings: Object.assign({ scoring:'ppr', startersOnly:false, wake:false,
+    kinds:{score:true,bigplay:true,milestone:true,turnover:true,kickoff:true,final:true} }, lsGet('kvh.settings', {})),
+  events: {}, teamEvent: {}, parsed: {}, sbCache: {},
+  week: null, year: LEAGUE.season, seasonType: 2,
+  primed: false, busy: false, unread: 0, matchup: null, swReg: null, wakeLock: null, lastUpdate: null
+};
+
+function parseRoster(txt){
+  return txt.split('\n').map(l => l.trim()).filter(Boolean).map(l => {
+    const [slot, name, team, pos] = l.split(',').map(x => (x||'').trim());
+    return { slot: slot || 'Bench', name, team: (team||'').toUpperCase(), pos: (pos||'').toUpperCase() || 'WR' };
+  }).filter(p => p.name && p.team);
+}
+const rosterToTxt = r => r.map(p => `${p.slot}, ${p.name}, ${p.team}, ${p.pos}`).join('\n');
+const isStarter = p => !['BENCH','IR'].includes(p.slot.toUpperCase());
+
+/* ============ Parsing ESPN ============ */
+function parseEvent(ev){
+  const c = ev.competitions[0]; const st = c.status || ev.status;
+  const comp = c.competitors.map(x => ({ abbr: x.team.abbreviation, score: num(x.score), home: x.homeAway === 'home' }));
+  return { id: ev.id, date: ev.date, state: st.type.state, detail: st.type.shortDetail || '',
+    period: st.period, clock: st.displayClock, home: comp.find(x => x.home), away: comp.find(x => !x.home) };
+}
+
+function blank(){ return {cmp:0,att:0,passYds:0,passTD:0,int:0,sacksTaken:0,rushAtt:0,rushYds:0,rushTD:0,longRush:0,
+  rec:0,tgt:0,recYds:0,recTD:0,longRec:0,fumLost:0,fgm:0,fga:0,xpm:0,xpa:0}; }
+
+function expand(keys, vals){
+  const o = {};
+  keys.forEach((k, i) => {
+    const v = String(vals[i] ?? '');
+    if (k.includes('/') && v.includes('/')) { const ks = k.split('/'), vs = v.split('/'); ks.forEach((kk, j) => o[kk] = num(vs[j])); }
+    else if (k.includes('-') && /^\d+-\d+$/.test(v)) { const ks = k.split('-'), vs = v.split('-'); ks.forEach((kk, j) => o[kk] = num(vs[j])); }
+    else o[k] = num(v);
+  });
+  return o;
+}
+
+function applyCat(cat, v, s){
+  if (cat === 'passing'){ s.cmp=v.completions||0; s.att=v.passingAttempts||0; s.passYds=v.passingYards||0; s.passTD=v.passingTouchdowns||0; s.int=v.interceptions||0; s.sacksTaken=v.sacks||0; }
+  else if (cat === 'rushing'){ s.rushAtt=v.rushingAttempts||0; s.rushYds=v.rushingYards||0; s.rushTD=v.rushingTouchdowns||0; s.longRush=v.longRushing||0; }
+  else if (cat === 'receiving'){ s.rec=v.receptions||0; s.recYds=v.receivingYards||0; s.recTD=v.receivingTouchdowns||0; s.tgt=v.receivingTargets||0; s.longRec=v.longReception||0; }
+  else if (cat === 'fumbles'){ s.fumLost=v.fumblesLost||0; }
+  else if (cat === 'kicking'){ s.fgm=v.fieldGoalsMade||0; s.fga=v.fieldGoalAttempts||0; s.xpm=v.extraPointsMade||0; s.xpa=v.extraPointAttempts||0; }
+}
+
+function parseSummary(sum, e){
+  const players = {}, agg = {};
+  for (const tm of (sum.boxscore && sum.boxscore.players) || []){
+    const abbr = tm.team.abbreviation; agg[abbr] = agg[abbr] || { sacks:0, ints:0, fumLost:0 };
+    for (const cat of tm.statistics || []){
+      const keys = (cat.keys && cat.keys.length) ? cat.keys : (cat.labels || []).map(l => (LABELMAP[cat.name]||{})[l] || l);
+      for (const a of cat.athletes || []){
+        const nm = a.athlete.displayName; const k = norm(nm) + '|' + abbr;
+        const P = players[k] = players[k] || { id: a.athlete.id, name: nm, team: abbr, s: blank() };
+        applyCat(cat.name, expand(keys, a.stats || []), P.s);
+      }
+    }
+  }
+  for (const P of Object.values(players)){ const g = agg[P.team]; g.sacks += P.s.sacksTaken; g.ints += P.s.int; g.fumLost += P.s.fumLost; }
+  const plays = (sum.scoringPlays || []).map(p => ({ id: p.id, type: (p.type && p.type.text) || '', text: p.text || '',
+    team: (p.team && p.team.abbreviation) || '', q: p.period && p.period.number, clock: (p.clock && p.clock.displayValue) || '' }));
+  const videos = (sum.videos || []).map(v => ({ id: v.id, h: v.headline || '', d: v.description || '',
+    url: (v.links && ((v.links.web && v.links.web.href) || (v.links.mobile && v.links.mobile.href))) || '',
+    img: v.thumbnail || '', dur: v.duration || 0 })).filter(v => v.url);
+  return { id: e.id, at: Date.now(), final: e.state === 'post', state: e.state, date: e.date, detail: e.detail,
+    home: e.home, away: e.away, players, agg, plays, videos };
+}
+
+async function loadEvent(e){
+  const key = 'kvh.ev.' + e.id, now = Date.now();
+  const mem = S.parsed[e.id], cached = mem || lsGet(key);
+  const recent = now - new Date(e.date).getTime() < 20 * 3600e3;
+  let stale = !cached || !cached.final || e.state === 'in' || (recent && now - cached.at > 10 * 60e3);
+  if (e.state === 'post' && cached && !cached.final) stale = true;
+  if (!stale){ S.parsed[e.id] = cached; return cached; }
+  try {
+    const p = parseSummary(await getJSON(SUM + e.id), e);
+    S.parsed[e.id] = p; lsSet(key, p); return p;
+  } catch { if (cached){ S.parsed[e.id] = cached; return cached; } return null; }
+}
+
+async function weekBoard(w){
+  if (S.sbCache[w]) return S.sbCache[w];
+  const lsKey = `kvh.sb.${S.year}.${w}`;
+  const c = w < S.week ? lsGet(lsKey) : null;
+  if (c){ S.sbCache[w] = c; return c; }
+  const d = await getJSON(`${SB}?seasontype=2&week=${w}&dates=${S.year}`);
+  const evs = (d.events || []).map(parseEvent);
+  S.sbCache[w] = evs;
+  if (w < S.week && evs.every(e => e.state === 'post')) lsSet(lsKey, evs);
+  return evs;
+}
+
+/* ============ Stats & points ============ */
+function findPlayer(p, parsed){
+  if (!parsed) return null;
+  let P = parsed.players[norm(p.name) + '|' + p.team];
+  if (!P){
+    const ln = norm(lastName(p.name));
+    P = Object.values(parsed.players).find(x => x.team === p.team && norm(lastName(x.name)) === ln);
+  }
+  if (!P){ const n = norm(p.name); P = Object.values(parsed.players).find(x => norm(x.name) === n); }
+  return P || null;
+}
+
+function statsFor(p, parsed){
+  if (!parsed) return null;
+  if (p.pos === 'D/ST'){
+    const mine = parsed.home.abbr === p.team ? parsed.home : parsed.away;
+    const opp  = parsed.home.abbr === p.team ? parsed.away : parsed.home;
+    const ev = S.events[parsed.id]; const live = ev ? (ev.home.abbr === opp.abbr ? ev.home : ev.away) : opp;
+    const oa = parsed.agg[opp.abbr] || { sacks:0, ints:0, fumLost:0 };
+    const mineP = parsed.plays.filter(x => x.team === p.team);
+    const td = mineP.filter(x => /touchdown/i.test(x.type) && DST_RE.test(x.type) && !/own/i.test(x.type)).length;
+    const saf = mineP.filter(x => /safety/i.test(x.type)).length;
+    return { dst: true, pa: live.score, sacks: oa.sacks, dInt: oa.ints, fr: oa.fumLost, dTD: td, saf };
+  }
+  const P = findPlayer(p, parsed);
+  if (!P) return null;
+  if (P.id && S.ids[keyOf(p)] !== P.id){ S.ids[keyOf(p)] = P.id; lsSet('kvh.ids', S.ids); }
+  const s = Object.assign({}, P.s, { id: P.id });
+  if (p.pos === 'K'){
+    const ln = new RegExp('\\b' + reEsc(lastName(p.name)) + '\\b', 'i');
+    s.fgDist = parsed.plays.filter(x => x.team === p.team && /field goal/i.test(x.type) && ln.test(x.text))
+      .map(x => { const m = x.text.match(/(\d+)\s*-?\s*Ya?r?d/i); return m ? +m[1] : 30; });
+  }
+  return s;
+}
+
+function points(p, s){
+  if (!s) return 0;
+  if (s.dst){
+    const pa = s.pa; let paPts = pa === 0 ? 5 : pa <= 6 ? 4 : pa <= 13 ? 3 : pa <= 17 ? 1 : pa <= 27 ? 0 : pa <= 34 ? -1 : pa <= 45 ? -3 : -5;
+    return paPts + s.sacks + 2*s.dInt + 2*s.fr + 6*s.dTD + 2*s.saf;
+  }
+  if (p.pos === 'K'){
+    const d = (s.fgDist || []).slice(0, s.fgm); while (d.length < s.fgm) d.push(30);
+    const fg = d.reduce((t, x) => t + (x >= 50 ? 5 : x >= 40 ? 4 : 3), 0);
+    return fg - (s.fga - s.fgm) + s.xpm - (s.xpa - s.xpm);
+  }
+  const ppr = { ppr:1, half:.5, std:0 }[S.settings.scoring];
+  return s.passYds*0.04 + s.passTD*4 - s.int*2 + s.rushYds*0.1 + s.rushTD*6 + s.rec*ppr + s.recYds*0.1 + s.recTD*6 - s.fumLost*2;
+}
+
+function statLine(p, s){
+  if (!s) return '';
+  if (s.dst){
+    const a = [`${s.pa} pts allowed`];
+    if (s.sacks) a.push(`${s.sacks} sacks`); if (s.dInt) a.push(`${s.dInt} INT`); if (s.fr) a.push(`${s.fr} fum rec`);
+    if (s.dTD) a.push(`${s.dTD} TD`); if (s.saf) a.push(`${s.saf} safety`);
+    return a.join(', ');
+  }
+  if (p.pos === 'K'){
+    const a = [`${s.fgm}/${s.fga} FG`, `${s.xpm}/${s.xpa} XP`];
+    if (s.fgDist && s.fgDist.length) a.push(`long ${Math.max(...s.fgDist)}`);
+    return a.join(', ');
+  }
+  const a = [];
+  if (s.att) a.push(`${s.cmp}/${s.att}, ${s.passYds} yds` + (s.passTD ? `, ${s.passTD} TD` : '') + (s.int ? `, ${s.int} INT` : ''));
+  if (s.rushAtt) a.push(`${s.rushAtt} car, ${s.rushYds} yds` + (s.rushTD ? `, ${s.rushTD} TD` : ''));
+  if (s.tgt || s.rec) a.push(`${s.rec}/${s.tgt || s.rec} rec, ${s.recYds} yds` + (s.recTD ? `, ${s.recTD} TD` : ''));
+  if (s.fumLost) a.push(`${s.fumLost} fum lost`);
+  return a.join(' | ') || 'No stats yet';
+}
+
+function gameStatus(team, e){
+  if (!e) return { txt: 'Bye', live: false };
+  const home = e.home.abbr === team; const me = home ? e.home : e.away; const op = home ? e.away : e.home;
+  const vs = (home ? 'vs ' : '@') + op.abbr;
+  if (e.state === 'pre'){
+    const d = new Date(e.date);
+    return { txt: `${d.toLocaleDateString([], {weekday:'short'})} ${d.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'})}, ${vs}`, live:false };
+  }
+  if (e.state === 'in'){
+    const det = /half/i.test(e.detail) ? 'Half' : `Q${e.period} ${e.clock}`;
+    return { txt: `${det}, ${me.score}-${op.score} ${vs}`, live: true };
+  }
+  const r = me.score > op.score ? 'W' : me.score < op.score ? 'L' : 'T';
+  return { txt: `${r} ${me.score}-${op.score} ${vs}`, live: false };
+}
+
+/* ============ Alerts ============ */
+function pushAlert(id, kind, title, body, p){
+  if (S.seen.has(id)) return;
+  S.seen.add(id);
+  const item = { id, kind, title, body, t: Date.now(), k: p ? keyOf(p) : null };
+  S.feed.unshift(item);
+  if (S.feed.length > 300) S.feed.length = 300;
+  if (S.primed){
+    S.unread++;
+    const ok = S.settings.kinds[kind] && (!S.settings.startersOnly || !p || isStarter(p));
+    if (ok) notify(title, body, id, p);
+  }
+}
+
+function detect(){
+  for (const e of Object.values(S.events)){
+    const parsed = S.parsed[e.id];
+    const ros = S.roster.filter(p => p.team === e.home.abbr || p.team === e.away.abbr);
+    if (!ros.length) continue;
+    const label = `${e.away.abbr} at ${e.home.abbr}`;
+    if (e.state === 'in') pushAlert(`ko-${e.id}`, 'kickoff', `Kickoff: ${label}`, ros.map(p => p.name).join(', '), null);
+    if (!parsed) continue;
+
+    for (const p of ros){
+      const s = statsFor(p, parsed); const k = keyOf(p); const tag = `${e.id}-${k}`;
+      // Scoring plays
+      for (const pl of parsed.plays){
+        if (pl.team !== p.team) continue;
+        let hit = false;
+        if (p.pos === 'D/ST') hit = DST_RE.test(pl.type) && !/own/i.test(pl.type) || /safety/i.test(pl.type);
+        else if (p.pos === 'K') hit = /field goal/i.test(pl.type) && new RegExp('\\b' + reEsc(lastName(p.name)) + '\\b', 'i').test(pl.text);
+        else hit = new RegExp('\\b' + reEsc(lastName(p.name)) + '\\b', 'i').test(pl.text);
+        if (!hit) continue;
+        const what = /touchdown/i.test(pl.type) ? 'Touchdown' : /field goal/i.test(pl.type) ? 'Field goal' : /safety/i.test(pl.type) ? 'Safety' : 'Score';
+        pushAlert(`sp-${pl.id}-${k}`, 'score', `${what}: ${p.pos === 'D/ST' ? p.name + ' D/ST' : p.name}`,
+          `${pl.text}${pl.q ? ` (Q${pl.q} ${pl.clock})` : ''}`, p);
+      }
+      if (!s) continue;
+      const pts = ptsFor(p, s), line = statLine(p, s);
+      if (s.dst){
+        for (let i = 1; i <= s.dInt; i++) pushAlert(`dint-${tag}-${i}`, 'turnover', `${p.name} D/ST interception`, line, p);
+        for (let i = 1; i <= s.fr; i++) pushAlert(`dfr-${tag}-${i}`, 'turnover', `${p.name} D/ST fumble recovery`, line, p);
+      } else if (p.pos !== 'K'){
+        for (let i = 1; i <= s.int; i++) pushAlert(`int-${tag}-${i}`, 'turnover', `Interception thrown: ${p.name}`, line, p);
+        for (let i = 1; i <= s.fumLost; i++) pushAlert(`fum-${tag}-${i}`, 'turnover', `Fumble lost: ${p.name}`, line, p);
+        if (s.longRush >= 40) pushAlert(`lr-${tag}`, 'bigplay', `Big run: ${p.name}, ${s.longRush} yards`, line, p);
+        if (s.longRec >= 40) pushAlert(`lc-${tag}`, 'bigplay', `Big catch: ${p.name}, ${s.longRec} yards`, line, p);
+        for (const t of [100,150,200]){
+          if (s.rushYds >= t) pushAlert(`ry${t}-${tag}`, 'milestone', `${p.name} passes ${t} rushing yards`, line, p);
+          if (s.recYds >= t) pushAlert(`cy${t}-${tag}`, 'milestone', `${p.name} passes ${t} receiving yards`, line, p);
+        }
+        for (const t of [300,400]) if (s.passYds >= t) pushAlert(`py${t}-${tag}`, 'milestone', `${p.name} passes ${t} passing yards`, line, p);
+        for (const t of [20,30,40]) if (pts >= t) pushAlert(`fp${t}-${tag}`, 'milestone', `${p.name} hits ${t}+ fantasy points`, `${fmt(pts)} pts: ${line}`, p);
+      }
+    }
+    if (e.state === 'post'){
+      const body = ros.map(p => `${p.pos === 'D/ST' ? p.name + ' D/ST' : lastName(p.name)} ${fmt(ptsFor(p, statsFor(p, parsed)))}`).join(', ');
+      pushAlert(`fin-${e.id}`, 'final', `Final: ${e.away.abbr} ${e.away.score}, ${e.home.abbr} ${e.home.score}`, body, null);
+    }
+  }
+  lsSet('kvh.feed', S.feed);
+  lsSet('kvh.seen', [...S.seen].slice(-3000));
+}
+
+async function notify(title, body, tag, p){
+  toast(title, body);
+  if (navigator.vibrate) try { navigator.vibrate([120, 60, 120]); } catch {}
+  if (!('Notification' in window) || Notification.permission !== 'granted') return;
+  const icon = p ? headshotUrl(p) : undefined;
+  const opts = { body, tag, icon, badge: icon, data: { url: location.href } };
+  try {
+    const reg = S.swReg || (navigator.serviceWorker && await navigator.serviceWorker.getRegistration());
+    if (reg) return reg.showNotification(title, opts);
+    new Notification(title, opts);
+  } catch {}
+}
+
+let toastTimer;
+function toast(title, body){
+  const t = $('#toast'); t.innerHTML = `<b>${esc(title)}</b><small>${esc(body)}</small>`;
+  t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 5000);
+}
+
+/* ============ Rendering ============ */
+function headshotUrl(p){
+  if (p.pos === 'D/ST') return `https://a.espncdn.com/i/teamlogos/nfl/500/${p.team.toLowerCase()}.png`;
+  const id = S.ids[keyOf(p)];
+  return id ? `https://a.espncdn.com/i/headshots/nfl/players/full/${id}.png` : '';
+}
+function headshot(p, cls='hs'){
+  const u = headshotUrl(p);
+  const ini = p.name.split(/\s+/).map(w => w[0]).join('').slice(0, 2);
+  return u ? `<img class="${cls}" src="${u}" alt="" loading="lazy" onerror="this.outerHTML='<div class=\\'${cls} init\\'>${esc(ini)}</div>'">`
+           : `<div class="${cls} init">${esc(ini)}</div>`;
+}
+
+function rowHTML(p){
+  const e = S.events[S.teamEvent[p.team]]; const parsed = e && S.parsed[e.id];
+  const s = statsFor(p, parsed); const pts = ptsFor(p, s); const gs = gameStatus(p.team, e); const o = officialFor(p);
+  const started = e && e.state !== 'pre';
+  return `<button class="row${gs.live ? ' live' : ''}" data-k="${esc(keyOf(p))}">
+    <div class="slot">${esc(p.slot === 'Bench' ? 'BN' : p.slot)}</div>
+    ${headshot(p)}
+    <div><div class="nm">${esc(p.pos === 'D/ST' ? p.name + ' D/ST' : p.name)}<span class="pos">${esc(p.pos)}, ${esc(p.team)}</span>${p.slot.toUpperCase()==='IR' ? '<span class="ir">IR</span>' : (o && o.injury && o.injury !== 'ACTIVE' ? `<span class="ir">${esc(o.injury.replace('_',' ').slice(0,4))}</span>` : '')}</div>
+    <div class="ln">${esc(started ? statLine(p, s) || 'No stats yet' : (e ? (o && o.proj != null ? `Projected ${fmt(o.proj)}` : 'Not started') : 'Bye week'))}</div></div>
+    <div class="rt"><div class="pt${pts ? '' : ' zero'}">${started || (o && o.pts) ? fmt(pts) : '–'}</div><div class="gs${gs.live ? ' live' : ''}">${esc(gs.txt)}</div></div>
+  </button>`;
+}
+
+function groupTotal(list){
+  return list.reduce((t, p) => { const e = S.events[S.teamEvent[p.team]]; return t + ptsFor(p, statsFor(p, e && S.parsed[e.id])); }, 0);
+}
+
+function render(){
+  const starters = S.roster.filter(isStarter), bench = S.roster.filter(p => p.slot.toUpperCase() === 'BENCH'), ir = S.roster.filter(p => p.slot.toUpperCase() === 'IR');
+  const sec = (title, list, showTot) => list.length ? `<div class="group"><h2>${title}</h2>${showTot ? `<span class="tot">${fmt(groupTotal(list))}</span>` : ''}</div><div class="list">${list.map(rowHTML).join('')}</div>` : '';
+  $('#v-team').innerHTML = (S.syncError ? `<p class="note" style="color:var(--bad)">${esc(S.syncError)}</p>` : '') + sec('Starters', starters, true) + sec('Bench', bench, true) + sec('Injured reserve', ir, false)
+    + `<p class="note">Tap a player for his game log and every highlight ESPN has posted this season. Updates every 30 seconds during games and every 5 minutes otherwise.</p>`;
+
+  // Header
+  $('#wkLbl').textContent = S.week ? `NFL Week ${S.week}` : 'NFL';
+  const tf = t => new Date(t).toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
+  $('#updLbl').textContent = [S.record ? `${S.record} record` : '', S.lastUpdate ? `Stats ${tf(S.lastUpdate)}` : '', S.syncedAt ? `ESPN team synced ${tf(S.syncedAt)}` : ''].filter(Boolean).join(', ');
+  const liveN = Object.values(S.events).filter(e => e.state === 'in').length;
+  if (S.matchup){
+    $('#board').innerHTML = `<div><div class="big">${fmt(S.matchup.me)}</div><div class="lbl">${esc(S.matchup.meName)}<br>official ESPN score</div></div>
+      <div class="vs">${fmt(S.matchup.opp)}<div class="lbl">${esc(S.matchup.oppName)}</div></div>`;
+  } else {
+    $('#board').innerHTML = `<div><div class="big">${fmt(groupTotal(starters))}</div></div>
+      <div class="lbl">Starter points, estimated<br>${liveN ? `${liveN} game${liveN > 1 ? 's' : ''} live now` : 'No games live right now'}</div>`;
+  }
+  renderFeed(); renderTicker(); updateUnread();
+}
+
+function ago(t){
+  const m = Math.round((Date.now() - t) / 60000);
+  if (m < 1) return 'now'; if (m < 60) return m + 'm'; const h = Math.round(m / 60); if (h < 24) return h + 'h';
+  return new Date(t).toLocaleDateString([], {month:'short', day:'numeric'});
+}
+
+function renderFeed(){
+  $('#v-alerts').innerHTML = S.feed.length
+    ? `<div class="feed">${S.feed.slice(0, 150).map(a => `<button class="al k-${a.kind}" ${a.k ? `data-k="${esc(a.k)}"` : ''}>
+        <div class="top"><span class="tt">${esc(a.title)}</span><span class="tm">${ago(a.t)}</span></div>
+        <div class="bd">${esc(a.body)}</div></button>`).join('')}</div>`
+    : `<div class="empty">Scores, big plays and milestones for your players will show up here as they happen.</div>`;
+}
+
+function renderTicker(){
+  const items = S.feed.slice(0, 10);
+  const tr = $('#track');
+  if (!items.length){ tr.innerHTML = `<span>No alerts yet this week. Tracking ${S.roster.length} players.</span>`; return; }
+  tr.innerHTML = items.map(a => `<span><b>${esc(a.title)}</b>${esc(a.body.length > 90 ? a.body.slice(0, 90) + '…' : a.body)}</span>`).join('');
+  tr.style.setProperty('--dur', Math.max(25, items.length * 9) + 's');
+}
+
+function updateUnread(){
+  const d = $('#unread'); d.hidden = !S.unread; d.textContent = S.unread;
+}
+
+/* ============ Player sheet ============ */
+async function openPlayer(k){
+  const p = S.roster.find(x => keyOf(x) === k); if (!p) return;
+  const dlg = $('#sheet'); const id = S.ids[k];
+  const yt = q => `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
+  const links = [
+    id ? `<a href="https://www.espn.com/nfl/player/_/id/${id}" target="_blank" rel="noopener">ESPN player page</a>` : '',
+    p.pos === 'D/ST' ? `<a href="https://www.espn.com/nfl/team/_/name/${p.team.toLowerCase()}" target="_blank" rel="noopener">ESPN team page</a>` : '',
+    `<a href="${yt(`${p.pos === 'D/ST' ? TEAM_NICK[p.team] + ' defense' : p.name} highlights ${S.year}`)}" target="_blank" rel="noopener">YouTube highlights</a>`,
+    `<a href="https://fantasy.espn.com/football/team?leagueId=${LEAGUE.id}&teamId=${LEAGUE.team}&seasonId=${LEAGUE.season}" target="_blank" rel="noopener">My ESPN team</a>`
+  ].join('');
+  dlg.innerHTML = `<div class="sh">${headshot(p)}<div><h2>${esc(p.pos === 'D/ST' ? p.name + ' D/ST' : p.name)}</h2>
+      <div class="ln">${esc(p.pos)}, ${esc(TEAM_NICK[p.team] || p.team)}, ${esc(p.slot)}</div></div>
+      <button class="x" aria-label="Close">✕</button></div>
+    <div class="sb"><div class="links">${links}</div><div id="log"><p class="note">Loading game log and highlights…</p></div></div>`;
+  dlg.querySelector('.x').onclick = () => dlg.close();
+  dlg.showModal();
+
+  const log = dlg.querySelector('#log');
+  const weeks = []; for (let w = S.week || 1; w >= 1; w--) weeks.push(w);
+  const blocks = [];
+  for (const w of weeks){
+    let block;
+    try {
+      const evs = await weekBoard(w);
+      const e = evs.find(x => x.home.abbr === p.team || x.away.abbr === p.team);
+      if (!e) block = `<div class="wk"><div class="wh"><span class="wt">Week ${w}</span><span class="wl">Bye</span></div></div>`;
+      else {
+        const gs = gameStatus(p.team, e);
+        if (e.state === 'pre') block = `<div class="wk"><div class="wh"><span class="wt">Week ${w}</span><span class="wl">${esc(gs.txt)}</span></div></div>`;
+        else {
+          const parsed = await loadEvent(e); const s = statsFor(p, parsed);
+          const vids = parsed ? videosFor(p, parsed) : [];
+          const game = parsed ? parsed.videos.find(v => /highlights/i.test(v.h) && !vids.includes(v)) : null;
+          block = `<div class="wk"><div class="wh"><span class="wt">Week ${w}, ${esc(gs.txt)}</span><span class="wp">${fmt(points(p, s))}</span></div>
+            <div class="wl">${esc(s ? statLine(p, s) : 'Did not record stats')}</div>
+            ${vids.length ? `<div class="vids">${vids.map(vidHTML).join('')}</div>` : `<div class="wl">No player clips posted for this game yet.</div>`}
+            ${game ? `<a class="more" href="${esc(game.url)}" target="_blank" rel="noopener">Full game highlights: ${esc(game.h)}</a><br>` : ''}
+            <a class="more" href="https://www.espn.com/nfl/game/_/gameId/${e.id}" target="_blank" rel="noopener">ESPN game page</a>
+            <a class="more" style="margin-left:12px" href="${yt(`${p.pos === 'D/ST' ? TEAM_NICK[p.team] + ' defense' : p.name} week ${w} ${S.year} highlights`)}" target="_blank" rel="noopener">Search YouTube</a>
+          </div>`;
+        }
+      }
+    } catch { block = `<div class="wk"><div class="wh"><span class="wt">Week ${w}</span><span class="wl">Couldn't load from ESPN</span></div></div>`; }
+    if (!dlg.open) return;
+    blocks.push(block); log.innerHTML = blocks.join('') + (blocks.length < weeks.length ? `<p class="note">Loading earlier weeks…</p>` : '');
+  }
+  // headshot may now be known
+  const hs = dlg.querySelector('.sh .init'); if (hs && S.ids[k]) hs.outerHTML = headshot(p);
+}
+
+function videosFor(p, parsed){
+  if (p.pos === 'D/ST'){
+    const nick = new RegExp(TEAM_NICK[p.team] || p.team, 'i');
+    return parsed.videos.filter(v => { const t = v.h + ' ' + v.d; return nick.test(t) && /defen|sack|intercept|pick|fumble|return|block|safety|strip/i.test(t); });
+  }
+  const re = new RegExp('\\b' + reEsc(lastName(p.name)) + '\\b', 'i');
+  return parsed.videos.filter(v => re.test(v.h + ' ' + v.d));
+}
+function vidHTML(v){
+  const d = v.dur ? `${Math.floor(v.dur / 60)}:${String(v.dur % 60).padStart(2, '0')}` : '';
+  return `<a class="vid" href="${esc(v.url)}" target="_blank" rel="noopener">${v.img ? `<img src="${esc(v.img)}" alt="" loading="lazy">` : ''}
+    <span>${esc(v.h)}</span>${d ? `<em>${d}</em>` : ''}</a>`;
+}
+
+/* ============ Update loop ============ */
+let timer;
+function schedule(){
+  clearTimeout(timer);
+  const evs = Object.values(S.events);
+  const live = evs.some(e => e.state === 'in');
+  const soon = evs.some(e => e.state === 'pre' && new Date(e.date) - Date.now() < 20 * 60e3);
+  timer = setTimeout(refresh, live ? 30e3 : soon ? 60e3 : 5 * 60e3);
+}
+
+async function refresh(){
+  if (S.busy) return; S.busy = true;
+  try {
+    await loadTeamJson();
+    const sb = await getJSON(SB);
+    S.week = (sb.week && sb.week.number) || S.week;
+    S.year = (sb.season && sb.season.year) || S.year;
+    const teams = new Set(S.roster.map(p => p.team));
+    S.events = {}; S.teamEvent = {};
+    for (const ev of sb.events || []){
+      const e = parseEvent(ev);
+      if (teams.has(e.home.abbr) || teams.has(e.away.abbr)){
+        S.events[e.id] = e; S.teamEvent[e.home.abbr] = e.id; S.teamEvent[e.away.abbr] = e.id;
+      }
+    }
+    S.sbCache[S.week] = (sb.events || []).map(parseEvent);
+    await Promise.all(Object.values(S.events).filter(e => e.state !== 'pre').map(loadEvent));
+    detect();
+    S.primed = true; S.lastUpdate = Date.now();
+    render();
+    findMissingIds();
+  } catch (err) {
+    $('#updLbl').textContent = 'Couldn’t reach ESPN. Retrying shortly.';
+  }
+  S.busy = false; schedule();
+}
+
+async function findMissingIds(){
+  const missing = S.roster.filter(p => p.pos !== 'D/ST' && !S.ids[keyOf(p)]);
+  if (!missing.length || !S.week) return;
+  for (let w = S.week - 1; w >= Math.max(1, S.week - 3) && missing.some(p => !S.ids[keyOf(p)]); w--){
+    try {
+      const evs = await weekBoard(w);
+      for (const p of missing.filter(p => !S.ids[keyOf(p)])){
+        const e = evs.find(x => x.home.abbr === p.team || x.away.abbr === p.team);
+        if (e && e.state === 'post') statsFor(p, await loadEvent(e));
+      }
+    } catch {}
+  }
+  render();
+}
+
+async function loadTeamJson(){
+  try {
+    const d = await getJSON('data/team.json?t=' + Date.now());
+    S.syncError = d && d.error || null;
+    if (!d || !d.roster || !d.roster.length) return;
+    S.roster = d.roster.map(p => ({ slot: p.slot, name: p.name, team: p.team, pos: p.pos }));
+    S.rosterSrc = 'espn'; S.official = {}; S.officialWeek = d.week; S.syncedAt = d.updated;
+    for (const p of d.roster){
+      const k = keyOf(p); S.official[k] = { pts: p.pts, proj: p.proj, injury: p.injury };
+      if (p.espnId && p.pos !== 'D/ST') S.ids[k] = String(p.espnId);
+    }
+    lsSet('kvh.ids', S.ids); lsSet('kvh.rosterTxt', rosterToTxt(S.roster)); lsSet('kvh.rosterSrc', 'espn');
+    if (d.team && d.team.name) $('#teamName').textContent = d.team.name;
+    S.record = d.team && d.team.record;
+    S.matchup = d.matchup || null;
+    if (document.activeElement !== $('#rosterTxt')) fillSettings();
+  } catch { /* no data/team.json yet: the saved roster is used */ }
+}
+
+function officialFor(p){ return S.official && S.officialWeek === S.week ? S.official[keyOf(p)] : null; }
+function ptsFor(p, s){
+  const e = S.events[S.teamEvent[p.team]]; if (e && e.state === 'in') return points(p, s); // live: fresher than last sync
+  const o = officialFor(p); return o && o.pts != null ? o.pts : points(p, s); }
+
+/* ============ Settings & UI wiring ============ */
+function fillSettings(){
+  $('#rosterTxt').value = rosterToTxt(S.roster);
+  $('#rosterSrc').textContent = S.rosterSrc === 'espn' ? 'Synced from your ESPN league every few minutes. Edits here get replaced on the next sync, so make roster moves on ESPN.' :
+    S.rosterSrc === 'manual' ? 'Using the roster you saved here.' : 'Using your Week 4 roster. ESPN sync isn’t set up yet (data/team.json is missing), so update this after trades or pickups.';
+  $('#scoring').value = S.settings.scoring;
+  $('#startersOnly').checked = S.settings.startersOnly;
+  $('#wakeLock').checked = S.settings.wake;
+  document.querySelectorAll('[data-kind]').forEach(cb => cb.checked = !!S.settings.kinds[cb.dataset.kind]);
+  const perm = 'Notification' in window ? Notification.permission : 'unsupported';
+  $('#notifStatus').textContent = perm === 'granted' ? 'Notifications are on for this browser.' :
+    perm === 'denied' ? 'Notifications are blocked. Allow them for this site in your browser settings, then reload.' :
+    perm === 'unsupported' ? 'This browser can’t show notifications. In-page alerts still work.' : 'Notifications are off.';
+  $('#notifBtn').hidden = perm === 'granted' || perm === 'unsupported';
+}
+const saveSettings = () => lsSet('kvh.settings', S.settings);
+
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x === t));
+  document.querySelectorAll('.view').forEach(v => v.hidden = v.id !== 'v-' + t.dataset.v);
+  if (t.dataset.v === 'alerts'){ S.unread = 0; updateUnread(); }
+  window.scrollTo({ top: 0 });
+});
+document.addEventListener('click', e => {
+  const r = e.target.closest('[data-k]'); if (r && !e.target.closest('dialog')) openPlayer(r.dataset.k);
+});
+$('#sheet').addEventListener('click', e => { if (e.target.id === 'sheet') e.target.close(); });
+
+$('#notifBtn').onclick = async () => {
+  if (!('Notification' in window)) return;
+  await Notification.requestPermission(); fillSettings();
+  if (Notification.permission === 'granted') notify('Notifications are on', 'You’ll get alerts for your players while this page is open.', 'kvh-on');
+};
+$('#testBtn').onclick = () => notify('Touchdown: Joe Burrow', 'Test alert. This is what a scoring alert looks like.', 'kvh-test-' + Date.now(), S.roster[0]);
+document.querySelectorAll('[data-kind]').forEach(cb => cb.onchange = () => { S.settings.kinds[cb.dataset.kind] = cb.checked; saveSettings(); });
+$('#startersOnly').onchange = e => { S.settings.startersOnly = e.target.checked; saveSettings(); };
+$('#scoring').onchange = e => { S.settings.scoring = e.target.value; saveSettings(); render(); };
+$('#wakeLock').onchange = e => { S.settings.wake = e.target.checked; saveSettings(); applyWake(); };
+$('#saveRoster').onclick = () => {
+  const r = parseRoster($('#rosterTxt').value); if (!r.length) return toast('Roster not saved', 'Add at least one line like: QB, Joe Burrow, CIN, QB');
+  S.roster = r; S.rosterSrc = 'manual'; lsSet('kvh.rosterTxt', rosterToTxt(r)); lsSet('kvh.rosterSrc', 'manual');
+  fillSettings(); toast('Roster saved', `${r.length} players`); refresh();
+};
+$('#resetRoster').onclick = () => {
+  S.roster = parseRoster(DEFAULT_ROSTER); S.rosterSrc = 'screenshot'; localStorage.removeItem('kvh.rosterTxt'); lsSet('kvh.rosterSrc', 'screenshot');
+  fillSettings(); refresh();
+};
+$('#clearFeed').onclick = () => { S.feed = []; lsSet('kvh.feed', []); S.unread = 0; render(); toast('Alert history cleared', 'New alerts will still come in.'); };
+
+async function applyWake(){
+  try {
+    if (S.settings.wake && 'wakeLock' in navigator && document.visibilityState === 'visible'){ S.wakeLock = await navigator.wakeLock.request('screen'); }
+    else if (!S.settings.wake && S.wakeLock){ await S.wakeLock.release(); S.wakeLock = null; }
+  } catch {}
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible'){ applyWake(); refresh(); }
+});
+
+/* ============ Boot ============ */
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')){
+  navigator.serviceWorker.register('sw.js').then(r => S.swReg = r).catch(() => {});
+}
+fillSettings();
+render();
+refresh();
+setInterval(() => { if (document.visibilityState === 'visible') renderFeed(); }, 60e3);
+applyWake();
+</script>
 </body>
 </html>
