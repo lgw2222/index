@@ -1,3 +1,197 @@
 {
- "error": "ESPN blocked access. In ESPN: LM Tools > League Settings > Basic Settings > turn on 'Make League Viewable to Public'."
+ "season": 2026,
+ "week": 5,
+ "team": {
+  "name": "Knee-ver Over the Hill",
+  "record": "2-2-0"
+ },
+ "matchup": {
+  "me": 0,
+  "opp": 0,
+  "meName": "Knee-ver Over the Hill",
+  "oppName": "Thor: God of PA"
+ },
+ "roster": [
+  {
+   "slot": "QB",
+   "name": "Joe Burrow",
+   "team": "CIN",
+   "pos": "QB",
+   "espnId": 3915511,
+   "pts": 23.6,
+   "proj": 19.22,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "RB",
+   "name": "Omarion Hampton",
+   "team": "LAC",
+   "pos": "RB",
+   "espnId": 4685382,
+   "pts": 13.3,
+   "proj": 11.56,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "RB",
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "espnId": 4882093,
+   "pts": 11.1,
+   "proj": 13.93,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "WR",
+   "name": "Malik Nabers",
+   "team": "NYG",
+   "pos": "WR",
+   "espnId": 4595348,
+   "pts": 23.2,
+   "proj": 13.54,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "WR",
+   "name": "Josh Downs",
+   "team": "IND",
+   "pos": "WR",
+   "espnId": 4688813,
+   "pts": 4.6,
+   "proj": 12.04,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "FLEX",
+   "name": "Jaxon Smith-Njigba",
+   "team": "SEA",
+   "pos": "WR",
+   "espnId": 4430878,
+   "pts": 12.6,
+   "proj": 20.47,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "FLEX",
+   "name": "Tetairoa McMillan",
+   "team": "CAR",
+   "pos": "WR",
+   "espnId": 4685472,
+   "pts": 45.2,
+   "proj": 0.0,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "D/ST",
+   "name": "Bears",
+   "team": "CHI",
+   "pos": "D/ST",
+   "espnId": -16003,
+   "pts": 9.0,
+   "proj": 5.46,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "K",
+   "name": "Harrison Mevis",
+   "team": "LAR",
+   "pos": "K",
+   "espnId": 4574716,
+   "pts": 6.0,
+   "proj": 9.43,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "Bench",
+   "name": "Mike Evans",
+   "team": "SF",
+   "pos": "WR",
+   "espnId": 16737,
+   "pts": 12.6,
+   "proj": 12.78,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "Bench",
+   "name": "Blake Corum",
+   "team": "LAR",
+   "pos": "RB",
+   "espnId": 4429096,
+   "pts": 3.1,
+   "proj": 8.37,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "Bench",
+   "name": "Zach Charbonnet",
+   "team": "SEA",
+   "pos": "RB",
+   "espnId": 4426385,
+   "pts": 0.0,
+   "proj": 0.0,
+   "injury": "OUT"
+  },
+  {
+   "slot": "Bench",
+   "name": "Dylan Sampson",
+   "team": "CLE",
+   "pos": "RB",
+   "espnId": 5081397,
+   "pts": 0.0,
+   "proj": 0.0,
+   "injury": "INJURY_RESERVE"
+  },
+  {
+   "slot": "Bench",
+   "name": "Devaughn Vele",
+   "team": "NO",
+   "pos": "WR",
+   "espnId": 4569559,
+   "pts": 17.4,
+   "proj": 10.19,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "Bench",
+   "name": "George Holani",
+   "team": "SEA",
+   "pos": "RB",
+   "espnId": 4429835,
+   "pts": 3.0,
+   "proj": 7.51,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "Bench",
+   "name": "Emanuel Wilson",
+   "team": "SEA",
+   "pos": "RB",
+   "espnId": 4887558,
+   "pts": 27.0,
+   "proj": 13.58,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "IR",
+   "name": "Jonathon Brooks",
+   "team": "CAR",
+   "pos": "RB",
+   "espnId": 4678008,
+   "pts": 0.0,
+   "proj": 0.0,
+   "injury": "INJURY_RESERVE"
+  },
+  {
+   "slot": "IR",
+   "name": "Alec Pierce",
+   "team": "IND",
+   "pos": "WR",
+   "espnId": 4360078,
+   "pts": 0.0,
+   "proj": 0.0,
+   "injury": "INJURY_RESERVE"
+  }
+ ],
+ "updated": "2026-10-06T20:11:17+00:00"
 }
