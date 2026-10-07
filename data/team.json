@@ -24,22 +24,22 @@
   },
   {
    "slot": "RB",
-   "name": "Omarion Hampton",
-   "team": "LAC",
-   "pos": "RB",
-   "espnId": 4685382,
-   "pts": 13.3,
-   "proj": 11.56,
-   "injury": "ACTIVE"
-  },
-  {
-   "slot": "RB",
    "name": "Bhayshul Tuten",
    "team": "JAX",
    "pos": "RB",
    "espnId": 4882093,
    "pts": 11.1,
    "proj": 13.93,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "RB",
+   "name": "Emanuel Wilson",
+   "team": "SEA",
+   "pos": "RB",
+   "espnId": 4887558,
+   "pts": 27.0,
+   "proj": 13.58,
    "injury": "ACTIVE"
   },
   {
@@ -74,12 +74,12 @@
   },
   {
    "slot": "FLEX",
-   "name": "Tetairoa McMillan",
-   "team": "CAR",
+   "name": "Mike Evans",
+   "team": "SF",
    "pos": "WR",
-   "espnId": 4685472,
-   "pts": 45.2,
-   "proj": 0.0,
+   "espnId": 16737,
+   "pts": 12.6,
+   "proj": 12.78,
    "injury": "ACTIVE"
   },
   {
@@ -104,12 +104,22 @@
   },
   {
    "slot": "Bench",
-   "name": "Mike Evans",
-   "team": "SF",
+   "name": "Omarion Hampton",
+   "team": "LAC",
+   "pos": "RB",
+   "espnId": 4685382,
+   "pts": 13.3,
+   "proj": 11.56,
+   "injury": "ACTIVE"
+  },
+  {
+   "slot": "Bench",
+   "name": "Tetairoa McMillan",
+   "team": "CAR",
    "pos": "WR",
-   "espnId": 16737,
-   "pts": 12.6,
-   "proj": 12.78,
+   "espnId": 4685472,
+   "pts": 45.2,
+   "proj": 0.0,
    "injury": "ACTIVE"
   },
   {
@@ -163,16 +173,6 @@
    "injury": "ACTIVE"
   },
   {
-   "slot": "Bench",
-   "name": "Emanuel Wilson",
-   "team": "SEA",
-   "pos": "RB",
-   "espnId": 4887558,
-   "pts": 27.0,
-   "proj": 13.58,
-   "injury": "ACTIVE"
-  },
-  {
    "slot": "IR",
    "name": "Jonathon Brooks",
    "team": "CAR",
@@ -193,5 +193,5 @@
    "injury": "INJURY_RESERVE"
   }
  ],
- "updated": "2026-10-06T20:11:17+00:00"
+ "updated": "2026-10-07T16:34:09+00:00"
 }
