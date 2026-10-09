@@ -7,7 +7,7 @@
  },
  "matchup": {
   "me": 0,
-  "opp": 0,
+  "opp": 1.8,
   "meName": "Knee-ver Over the Hill",
   "oppName": "Thor: God of PA"
  },
@@ -193,5 +193,5 @@
    "injury": "INJURY_RESERVE"
   }
  ],
- "updated": "2026-10-08T01:13:22+00:00"
+ "updated": "2026-10-09T00:18:39+00:00"
 }
